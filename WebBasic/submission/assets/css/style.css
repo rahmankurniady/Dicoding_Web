@@ -1,0 +1,377 @@
+/* Part Global */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin :0;
+   padding: 0;
+/*   min-width: 660px;*/
+}
+
+p{	
+	text-align: justify;
+}
+
+h2 {
+    border-bottom: 8px solid #57c4d0;
+    font-size: 24px;
+    display: inline-block;
+}
+
+/* Part Header */
+
+header {
+   display: inline;
+}
+
+nav {
+   background-color: white;
+   padding: 5px;
+   position: sticky;
+   top :0;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: black;
+}
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 10px;
+   padding: 5px;
+}
+
+.jumbotron{
+    color: black;
+    display: flex;
+}
+
+.sub-text-header{
+	font-size: 12pt;
+}
+
+.img-logo{
+	width: 150pt;
+   max-height: auto;
+   object-fit:cover;
+   object-position: center;
+}
+
+.header-left{
+	flex : left;
+	width :50%;
+}
+
+.header-right{
+	padding-left: 5%;
+	flex : right;
+	width : 50%;
+	margin: auto;
+}
+
+.header-right a{
+	font-size:48pt; 
+	font-weight: bold;
+}
+
+.header-right p{
+	width:80%;
+}
+
+.header-image {
+   width: 100%;
+   max-height: 100vh;
+   object-fit:cover;
+   object-position: center;
+}
+
+.btn_contact{
+  background-color: #1eb7fa; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  top: -10px;
+}
+
+li.left {
+ float:left;
+}
+
+li.right {
+ float:right;
+}
+
+.flex-right{
+	float : right;
+	width : 40%;
+}
+
+.flex-left{
+	float : left;
+	width : 60%;
+}
+
+/* Part Main */
+
+main{
+	overflow:  auto;
+}
+
+#content{
+	padding: 30px 0px 30px 0px;
+}
+
+.card{
+	padding: 30px 15% 30px 15%;
+}
+
+#update{
+	padding: 10px 20px 10px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-data-actual{
+	display: flex;
+	text-align: center; 
+    flex:left; 	
+	background-color: #1eb7fa;
+	border: 1px solid #ccc; 
+	color :white;
+	font-size: 1em;
+	padding: 30px 30px 30px 30px;
+}
+
+.konfirmasi, .perawatan, .sembuh, .meninggal{
+	width :90%;
+    border-radius: 5px;	
+    border: 1px solid #ccc; 
+    background-color: #2fb2ce;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.konfirmasi a{
+	font-size: 5vw;
+	color : #eff542;
+	font-weight: bold;
+} 
+
+.perawatan a{
+	font-size: 5vw;
+	color : #f5ad42;
+	font-weight: bold;
+}
+
+.sembuh a{
+	font-size: 5vw;
+	color : #42f545;
+	font-weight: bold;
+} 
+
+.meninggal a{
+	font-size: 5vw;
+	color : #e81515;
+	font-weight: bold;
+}
+
+.content-flex{
+	width: 25%;
+}
+
+#gejala{
+	padding: 10px 20px 10px 20px;
+	margin: auto;
+	background-color: #f2f2f2;
+
+}
+
+.flex-gejala{
+	display: flex;
+	flex :left;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.flex-item-gejala{
+	width: 25%;
+}
+
+.gejala-img{
+   width: 22vw;
+   object-fit:cover;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   object-position: center;
+   border-radius: 10px;
+   background-color: #1eb7fa;
+}
+
+#kontak{
+	display: flex;
+	padding: 20px 20px 20px 20px;
+}
+
+#pencegahan{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info-contact {
+	width: 100%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.foto-profil{
+	 width: 100%;
+	 max-width: 50vw;
+   max-height: auto;
+   object-fit:cover;
+   object-position: center;
+   border-radius: 50%;
+
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #1eb7fa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.profil{
+	object-position: center;
+	padding: 10px 10px 10px 10px;
+}
+
+
+.t-profil{
+   width: 100%;
+   max-height: 100vh;
+   object-fit:cover;
+   object-position: center;
+   border : 1px solid black;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* part Footer */
+
+footer {
+   padding: 10px;
+   background-color: #1eb7fa;
+   text-align: center;
+   font-weight: bold;
+}
+
+
+
+
+/*Responsive*/
+
+@media screen and (max-width: 1000px) {
+
+	.jumbotron{
+		flex-direction: column;
+		display: flex;
+	}
+
+	.header-left{
+		width :90%;	
+		font-size: 13px;
+	}
+
+	.header-right{
+		width : 90%;
+		margin: auto;
+		padding-right: 10px;
+	}
+
+	.header-right a{
+		font-size:13pt; 
+		font-weight: bold;
+	}
+
+	.header-right p{
+		width:100%;
+	}
+
+	.card{
+		padding: 10px 5% 10px 5%;
+	}
+
+	.flex-left, .flex-right{
+		width: 100%;
+	}
+
+	.flex-gejala{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.flex-item-gejala{
+		width: 100%;
+	}
+
+	.gejala-img{
+	   width: 60vw;
+	   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	   object-position: center;
+	   border-radius: 10px;
+	}
+
+	.info-contact {
+		width: 95%;
+	  	border-radius: 5px;
+	  	background-color: #f2f2f2;
+	  	padding: 10px 30px 10px 20px;
+	}
+
+	#kontak{
+	flex-direction: column;
+	}
+
+	.flex-data-actual{
+		flex-direction: column;
+	}
+
+	.content-flex{
+		width: 100%;
+	}
+}

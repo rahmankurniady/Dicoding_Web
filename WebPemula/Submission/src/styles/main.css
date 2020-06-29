@@ -1,0 +1,251 @@
+/* Part Global */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin :0;
+   padding: 0;
+}
+
+p{	
+	text-align: justify;
+}
+
+h2 {
+    border-bottom: 8px solid #57c4d0;
+    font-size: 24px;
+    display: inline-block;
+}
+
+/* Part Header */
+header {
+	display: inline;
+}
+ 
+ header .icon {
+	 display: none;
+	 font-size: 1.5em;
+ }
+ 
+ nav {
+	background-color: white;
+	padding: 5px;
+	position: sticky;
+	top :0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	z-index: 2;
+ }
+ 
+ nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: black;
+ }
+
+ nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 10px;
+	padding: 5px;
+ }
+ 
+ .menu:hover {
+	 border-bottom: 4px solid #57c4d0;
+  }
+ 
+.btn_contact{
+	background-color: #1eb7fa; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	top: 10px;
+	right : 5px;
+  }
+
+li.left {
+	float:left;
+   }
+   
+li.right {
+	float:right;
+   }
+
+/* End Part Header */
+
+/* Part Main */
+
+main{
+	overflow:  auto;
+}
+
+#content{
+	padding: 30px 0px 30px 0px;
+}
+
+.card{
+	padding: 30px 15% 30px 15%;
+}
+
+#update{
+	padding: 10px 20px 10px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-data-actual{
+	display: flex;
+	text-align: center; 
+    flex:left; 	
+	background-color: #1eb7fa;
+	border: 1px solid #ccc; 
+	color :white;
+	font-size: 1em;
+	padding: 30px 30px 30px 30px;
+}
+
+.konfirmasi, .perawatan, .sembuh, .meninggal{
+	width :90%;
+    border-radius: 5px;	
+    border: 1px solid #ccc; 
+    background-color: #2fb2ce;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.konfirmasi a{
+	font-size: 5vw;
+	color : #eff542;
+	font-weight: bold;
+} 
+
+.perawatan a{
+	font-size: 5vw;
+	color : #f5ad42;
+	font-weight: bold;
+}
+
+.sembuh a{
+	font-size: 5vw;
+	color : #42f545;
+	font-weight: bold;
+} 
+
+.meninggal a{
+	font-size: 5vw;
+	color : #e81515;
+	font-weight: bold;
+}
+
+.content-flex{
+	width: 25%;
+	padding-top: 50px;
+	padding-bottom : 50px;
+}
+
+#gejala{
+	padding: 10px 20px 10px 20px;
+	margin: auto;
+	background-color: #f2f2f2;
+
+}
+
+.flex-gejala{
+	display: flex;
+	flex :left;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.flex-item-gejala{
+	width: 25%;
+}
+
+.gejala-img{
+   width: 22vw;
+   object-fit:cover;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   object-position: center;
+   border-radius: 10px;
+   background-color: #1eb7fa;
+}
+
+#pencegahan{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 680px) {
+
+	/* Start Part Header */
+
+	.topnav .menu {
+		display: none;
+	}
+
+	.first {
+		padding-top:20px;
+	}
+
+	.topnav a.icon {
+	  float: left;
+	  display: block;
+	}
+
+	.topnav.active {
+		position: sticky;
+	}
+
+	.topnav.active .icon {
+	  position: absolute;
+
+	}
+
+	.topnav.active a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	/* End Header Part */
+
+	.card{
+		padding: 10px 5% 10px 5%;
+	}
+
+	.konfirmasi a, .perawatan a, .sembuh a, .meninggal a{
+		font-size: 25pt;
+	} 
+	
+	.flex-data-actual{
+		flex-direction: column;
+	}
+
+	.content-flex{
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom : 5px;
+	}
+
+	.flex-gejala{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.flex-item-gejala{
+		width: 100%;
+	}
+
+	.gejala-img{
+	   width: 60vw;
+	   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	   object-position: center;
+	   border-radius: 10px;
+	}
+}
